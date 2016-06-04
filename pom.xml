@@ -42,6 +42,7 @@
         <dependency>
             <groupId>org.camunda.bpm</groupId>
             <artifactId>camunda-engine-rest</artifactId>
+            <classifier>tomcat</classifier>
             <version>${org.camunda.bpm.version}</version>
             <type>war</type>
         </dependency>
