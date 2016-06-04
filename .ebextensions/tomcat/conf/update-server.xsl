@@ -18,7 +18,9 @@
     </xsl:template>
 
     <xsl:template match="Listener[@className='org.apache.catalina.mbeans.GlobalResourcesLifecycleListener']">
-        <xsl:call-template name="listener" />
+        <xsl:if test="not(../Listener[@className='org.camunda.bpm.container.impl.tomcat.TomcatBpmPlatformBootstrap'])">
+            <xsl:call-template name="listener" />
+        </xsl:if>
         <xsl:copy-of select="."/>
     </xsl:template>
 
