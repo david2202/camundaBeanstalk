@@ -54,5 +54,12 @@
             </includes>
             <outputDirectory>/.ebextensions/tomcat/lib</outputDirectory>
         </dependencySet>
+        <dependencySet>
+            <includes>
+                <include>com.newrelic:newrelic</include>
+            </includes>
+            <outputDirectory>/.ebextensions/tomcat/newrelic</outputDirectory>
+            <outputFileNameMapping>newrelic.jar</outputFileNameMapping>
+        </dependencySet>
     </dependencySets>
 </assembly>
