@@ -10,7 +10,6 @@
             <xsl:apply-templates select="@* | node()"/>
         </xsl:copy>
     </xsl:template>
-    <!--
     <xsl:template match="Server">
         <xsl:copy>
             <xsl:apply-templates select="@* | node()"/>
@@ -54,5 +53,4 @@
                   maxActive="20"
                   minIdle="5" />
     </xsl:template>
-    -->
 </xsl:stylesheet>
